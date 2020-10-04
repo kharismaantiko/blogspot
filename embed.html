@@ -18,11 +18,11 @@ function loadCSS(c,b,f){var a=window.document.createElement("link");var d=b||win
 </script>
 <script>
 function loadVid(){
-var pideourl = getVideoIdFromUrl();
+var pideoid = getVideoIdFromUrl();
 var pideotype = getVideoTypeFromUrl();
-var urlpideoposter = 'https://drive.google.com/thumbnail?id=' + getVideoIdFromUrl() + '';
-var pideoposter = decodeURIComponent(url);
-var pideo = '<video controls crossorigin playsinline poster="' + videoposter + '" id="krz-player"><source src="' + videourl + '"/></video>'; 
+var pideourl = 'https://www.googleapis.com/drive/v3/files/'+pideoid+'?alt=media&key='+pideotype+'';
+var urlpideoposter = 'https://drive.google.com/thumbnail?id='+pideoid+'';
+var pideo = '<video controls crossorigin playsinline poster="'+urlpideoposter+'" id="krz-player"><source src="'+pideourl+'"/></video>'; 
 $(pideo).appendTo('#player');
 }
 function getVideoIdFromUrl() {
