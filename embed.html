@@ -42,7 +42,9 @@ return urlParams.get('kode');
 </script>
 <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.min.js"/>
 <script>
-eval(function(p,a,c,k,e,r){e=function(c){return c.toString(a)};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('$(3(){4($("#5-1").6>0){7 a=8 b("#c-1",{d:["2-e","2","f","g-h","i","j","k","l","m","n"],o:{p:q,r:"",s:""},t:"u:9"});v.1=a}});',32,32,'|player|play|function|if|md|length|const|new|||Plyr|krz|controls|large|progress|current|time|mute|volume|pip|fullscreen|speed|settings|ads|enabled|true|publisherId|tagUrl|ratio|16|window'.split('|'),0,{}))
+$(function(){
+const a=new Plyr("#krz-player",{controls:["play-large","play","progress","current-time","mute","volume","pip","fullscreen","speed","settings"],ads:{enabled:true,publisherId:"",tagUrl:""},ratio:"16:9"});
+window.player=a});
 </script>
 </body>
 </html>
