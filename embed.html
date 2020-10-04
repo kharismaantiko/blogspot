@@ -42,7 +42,8 @@ return urlParams.get('kode');
 </script>
 <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.min.js"/>
 <script>
-const player=new Plyr('#krz-player',{controls:["play-large","play","progress","current-time","mute","volume","pip","fullscreen","speed","settings"],ads:{enabled:true,publisherId:"",tagUrl:""},ratio:'16:9'});
+const player=new Plyr('#krz-player',{controls:['play-large','play','progress','current-time','mute','volume','pip','fullscreen','speed','settings'],ads:{enabled:true,publisherId:'',tagUrl:''},ratio:'16:9'});
+window.player = player;
 </script>
 </body>
 </html>
