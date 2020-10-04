@@ -16,29 +16,28 @@ function loadCSS(c,b,f){var a=window.document.createElement('link');var d=b||win
 </script>
 <script>
 $(function{
-var pideoid = getVideoIdFromUrl();
-var pideotype = getVideoTypeFromUrl();
-var pideourl = 'https://www.googleapis.com/drive/v3/files/'+pideoid+'?alt=media&key='+pideotype+'';
-var urlpideoposter = 'https://drive.google.com/thumbnail?id='+pideoid+'';
-var pideo = '<video controls crossorigin playsinline poster="'+urlpideoposter+'" id="krz-player"><source src="'+pideourl+'"/></video>'; 
+$.extend({ getUrlVars: function(){
+var vars = [], hash;
+var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+for(var i = 0; i < hashes.length; i++) {
+hash = hashes[i].split('=');
+vars.push(hash[0]);
+vars[hash[0]] = hash[1];
+}
+return vars;
+},
+getUrlVar: function(id){
+return $.getUrlVars()[id];
+},
+getUrlVar: function(type){
+return $.getUrlVars()[type];
+}
+});
+var pideoid = $.getUrlVar('id');
+var pideotype = $.getUrlVar('type');
+var pideo = '<video controls crossorigin playsinline poster="https://drive.google.com/thumbnail?id='+pideoid+'" id="krz-player"><source src="https://www.googleapis.com/drive/v3/files/'+pideoid+'?alt=media&key='+pideotype+"/></video>'; 
 $(pideo).appendTo('#player');
 });
-function getVideoIdFromUrl() {
-if (window.location.search) {
-let urlParams = new URLSearchParams(window.location.search);
-if (urlParams.has('id')) {
-return urlParams.get('id');
-}
-} return null;
-}
-function getVideoTypeFromUrl() {
-if (window.location.search) {
-let urlParams = new URLSearchParams(window.location.search);
-if (urlParams.has('kode')) {
-return urlParams.get('kode');
-}
-} return null;
-}
 </script>
 <script src="https://cdn.jsdelivr.net/npm/plyr@3.6.2/dist/plyr.min.js"/>
 <script>
