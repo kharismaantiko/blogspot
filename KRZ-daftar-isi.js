@@ -1,23 +1,3 @@
-// ---------------------------------------------------
-// BLOGTOC
-// ---------------------------------------------------
-// BlogToc creates a clickable Table Of Contents for
-// Blogger Blogs.
-// It uses the JSON post feed, and create a ToC of it.
-// The ToC can be sorted by title or by date, both
-// ascending and descending, and can be filtered by
-// label.
-// ---------------------------------------------------
-// Author: Beautiful Beta
-// Url: http://beautifulbeta.blogspot.com
-// Version: 2
-// Date: 2007-04-12
-// ---------------------------------------------------
-// Modified by Aneesh 
-// www.bloggerplugins.org
-// Date : 02-08-2011
-// global arrays
-
    var postTitle = new Array();     // array of posttitles
    var postUrl = new Array();       // array of posturls
    var postDate = new Array();      // array of post publish dates
@@ -27,7 +7,7 @@
 // global variables
    var sortBy = "datenewest";         // default value for sorting ToC
    var tocLoaded = false;           // true if feed is read and ToC can be displayed
-   var numChars = 250;              // number of characters in post summary
+   var numChars = 0;              // number of characters in post summary
    var postFilter = '';             // default filter value
    var tocdiv = document.getElementById("bp_toc"); //the toc container
    var totalEntires =0; //Entries grabbed till now
@@ -122,10 +102,7 @@ function loadtoc(json) {
    tocLoaded = true;
 }
 
-
-
 // filter and sort functions
-
 
 function filterPosts(filter) {
 // This function changes the filter
@@ -254,7 +231,6 @@ function toggleDateSort() {
    sortPosts(sortBy);
    displayToc(postFilter);
 } // end toggleTitleSort
-
 
 function showToc() {
   if (tocLoaded) { 
