@@ -1,10 +1,8 @@
 {
  'name': 'Kharisma Antiko Blog',
- 'short_name': 'KAB',
+ 'short_name': 'K.A.B',
  'start_url': 'https://khariswae.blogspot.com',
  'description': 'Sumber Informasi Terbaru dan Terbaik',
- 'background_color': '#ffffff',
- 'theme_color': '#ff0000',
  'icons': [
   {
    'src': 'https://1.bp.blogspot.com/-185H3umx0ko/XuYs9DHUPBI/AAAAAAAABJ8/u6S4UV_n8HEoUFzAZNFwYX_AyCx8KbrQgCK4BGAsYHg/w36-h36-p/favicon.png',
