@@ -1,8 +1,8 @@
 {
  'name': 'Kharisma Antiko Blog',
  'short_name': 'K.A.B',
- 'start_url': 'https://khariswae.blogspot.com',
- 'description': 'Sumber Informasi Terbaru dan Terbaik',
+ 'start_url': 'https://kharismaantikoblog.blogspot.com',
+ 'description': 'Informasi Seputar Teknologi, Seputar Aplikasi, dan Tips-Tips Menarik',
  'icons': [
   {
    'src': 'https://1.bp.blogspot.com/-185H3umx0ko/XuYs9DHUPBI/AAAAAAAABJ8/u6S4UV_n8HEoUFzAZNFwYX_AyCx8KbrQgCK4BGAsYHg/w36-h36-p/favicon.png',
