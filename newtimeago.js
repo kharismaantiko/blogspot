@@ -53,5 +53,10 @@ var timeago = function() {
   return obj;
 }
 
-if (typeof module !== 'undefined' && module.exports)
-  module.exports = timeago();
+/** Time ago for blogger */
+var postTimeStamps = Array.prototype.slice.call(document.querySelectorAll('[datetime]'), 0);
+if(postTimeStamps.length > 0) {
+	for(var i = 0; i < postTimeStamps.length; i++) {
+		postTimeStamps[i].innerHTML = timeAgo.ago(postTimeStamps[i].getAttribute('datetime').trim());
+	}
+}
