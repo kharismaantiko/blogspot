@@ -1,8 +1,8 @@
 {
  'name': 'KharisPati',
  'short_name': 'K.P.',
- 'start_url': 'https://kharispati.blogspot.com',
- 'description': 'Gratis Download Aplikasi Android Versi Mod Dan Permainan Android Versi Mod',
+ 'start_url': 'https://kharispati.ga',
+ 'description': 'Belajar Dunia Internet. Meliputi HTML, CSS, JavaScript, Jquery, dan Sejenisnya',
  'icons': [
   {
    'src': 'https://4.bp.blogspot.com/-185H3umx0ko/XuYs9DHUPBI/AAAAAAAABJ8/u6S4UV_n8HEoUFzAZNFwYX_AyCx8KbrQgCK4BGAsYHg/w36-h36-p/favicon.png',
