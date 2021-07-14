@@ -1,7 +1,11 @@
 {
  'name': 'KharisPati',
- 'short_name': 'K.P.',
+ 'short_name': 'KharisPati',
+ 'scope': 'https://kharispati.ga',
  'start_url': 'https://kharispati.ga',
+ 'display': 'standalone',
+ 'background_color': '#ffffff',
+ 'theme_color': '#ff0000',
  'description': 'Belajar Dunia Internet. Meliputi HTML, CSS, JavaScript, Jquery, dan Sejenisnya',
  'icons': [
   {
@@ -35,8 +39,20 @@
    'density': '3.0'
   },
   {
+   'src': 'https://4.bp.blogspot.com/-185H3umx0ko/XuYs9DHUPBI/AAAAAAAABJ8/u6S4UV_n8HEoUFzAZNFwYX_AyCx8KbrQgCK4BGAsYHg/w168-h168-p/favicon.png',
+   'sizes': '168x168',
+   'type': 'image\/png',
+   'density': '4.0'
+  },
+  {
    'src': 'https://4.bp.blogspot.com/-185H3umx0ko/XuYs9DHUPBI/AAAAAAAABJ8/u6S4UV_n8HEoUFzAZNFwYX_AyCx8KbrQgCK4BGAsYHg/w192-h192-p/favicon.png',
    'sizes': '192x192',
+   'type': 'image\/png',
+   'density': '4.0'
+  },
+  {
+   'src': 'https://4.bp.blogspot.com/-185H3umx0ko/XuYs9DHUPBI/AAAAAAAABJ8/u6S4UV_n8HEoUFzAZNFwYX_AyCx8KbrQgCK4BGAsYHg/w512-h512-p/favicon.png',
+   'sizes': '512x512',
    'type': 'image\/png',
    'density': '4.0'
   }
