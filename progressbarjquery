@@ -1,0 +1,2 @@
+!function(t){t.fn.ProgressBar=function(){return t(this).each(function(){var o=t(this).children(),n=t(this).offset().top,r=t(window).height(),i=o.attr("data-percent")+"%",a=o.attr("data-color");r>n&&(o.css({backgroundColor:a}),o.animate({width:i},1e3)),t(window).scroll(function(){t(this).scrollTop()>n-r&&(o.css({backgroundColor:a}),o.animate({width:i},1e3))})}),this}}(jQuery);
+$(document).ready(function(){ $(".progress-bar").ProgressBar(); });
