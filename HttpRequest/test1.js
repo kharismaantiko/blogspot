@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-		xhr.open('GET', 'https://api.jsonstorage.net/v1/json/f36b3a28-7fac-49c1-93f5-19b1ce4c7833', true);
+		xhr.open('GET', 'https://www.lintas27.ga/json/mlbblisthero.json', true);
   xhr.setRequestHeader('Content-type', 'application/json')
         xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 && xhr.status == 200) {
