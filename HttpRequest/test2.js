@@ -1,6 +1,5 @@
 var xhr = new XMLHttpRequest();
 		xhr.open('GET', 'https://www.lintas27.ga/json/mlbblisthero.json', true);
-  xhr.setRequestHeader('Content-type', 'application/json')
         xhr.onreadystatechange = function() {
             if(xhr.readyState == 4 && xhr.status == 200) {
               console.log(xhr.status);
