@@ -1,0 +1,60 @@
+{
+ 'name': 'KharisPati',
+ 'short_name': 'KPmoba',
+ 'scope': 'https://www.kharispati.blogspot.com',
+ 'start_url': 'https://www.kharispati.blogspot.com',
+ 'display': 'standalone',
+ 'background_color': '#ffffff',
+ 'theme_color': '#ff0000',
+ 'description': 'Wiki Moba Mobile Game',
+ 'icons': [
+  {
+   'src': 'https://blogger.googleusercontent.com/img/a/AVvXsEhVSrXmODfAZ2O4TT0hZz10q6q88lVwsZRGt02U7M-5cr8wynwFjUxW8Av0mV7DAOvRz1G3ZuidT-ohyy84K3uEljDqSiDyDO2pPNFu3u9BUKkiPk2iYfh3Ey4wXhOuckeEplfvETh8MN63ATSA9SHA1hpb0jE_WhXW-wlTw3PEiXxI9s31NOwk3MIqqw=w36-rw',
+   'sizes': '36x36',
+   'type': 'image\/png',
+   'density': '0.75'
+  },
+  {
+   'src': 'https://blogger.googleusercontent.com/img/a/AVvXsEhVSrXmODfAZ2O4TT0hZz10q6q88lVwsZRGt02U7M-5cr8wynwFjUxW8Av0mV7DAOvRz1G3ZuidT-ohyy84K3uEljDqSiDyDO2pPNFu3u9BUKkiPk2iYfh3Ey4wXhOuckeEplfvETh8MN63ATSA9SHA1hpb0jE_WhXW-wlTw3PEiXxI9s31NOwk3MIqqw=w48-rw',
+   'sizes': '48x48',
+   'type': 'image\/png',
+   'density': '1.0'
+  },
+  {
+   'src': 'https://blogger.googleusercontent.com/img/a/AVvXsEhVSrXmODfAZ2O4TT0hZz10q6q88lVwsZRGt02U7M-5cr8wynwFjUxW8Av0mV7DAOvRz1G3ZuidT-ohyy84K3uEljDqSiDyDO2pPNFu3u9BUKkiPk2iYfh3Ey4wXhOuckeEplfvETh8MN63ATSA9SHA1hpb0jE_WhXW-wlTw3PEiXxI9s31NOwk3MIqqw=w72-rw',
+   'sizes': '72x72',
+   'type': 'image\/png',
+   'density': '1.5'
+  },
+  {
+   'src': 'https://blogger.googleusercontent.com/img/a/AVvXsEhVSrXmODfAZ2O4TT0hZz10q6q88lVwsZRGt02U7M-5cr8wynwFjUxW8Av0mV7DAOvRz1G3ZuidT-ohyy84K3uEljDqSiDyDO2pPNFu3u9BUKkiPk2iYfh3Ey4wXhOuckeEplfvETh8MN63ATSA9SHA1hpb0jE_WhXW-wlTw3PEiXxI9s31NOwk3MIqqw=w96-rw',
+   'sizes': '96x96',
+   'type': 'image\/png',
+   'density': '2.0'
+  },
+  {
+   'src': 'https://blogger.googleusercontent.com/img/a/AVvXsEhVSrXmODfAZ2O4TT0hZz10q6q88lVwsZRGt02U7M-5cr8wynwFjUxW8Av0mV7DAOvRz1G3ZuidT-ohyy84K3uEljDqSiDyDO2pPNFu3u9BUKkiPk2iYfh3Ey4wXhOuckeEplfvETh8MN63ATSA9SHA1hpb0jE_WhXW-wlTw3PEiXxI9s31NOwk3MIqqw=w144-rw',
+   'sizes': '144x144',
+   'type': 'image\/png',
+   'density': '3.0'
+  },
+  {
+   'src': 'https://blogger.googleusercontent.com/img/a/AVvXsEhVSrXmODfAZ2O4TT0hZz10q6q88lVwsZRGt02U7M-5cr8wynwFjUxW8Av0mV7DAOvRz1G3ZuidT-ohyy84K3uEljDqSiDyDO2pPNFu3u9BUKkiPk2iYfh3Ey4wXhOuckeEplfvETh8MN63ATSA9SHA1hpb0jE_WhXW-wlTw3PEiXxI9s31NOwk3MIqqw=w168-rw',
+   'sizes': '168x168',
+   'type': 'image\/png',
+   'density': '4.0'
+  },
+  {
+   'src': 'https://blogger.googleusercontent.com/img/a/AVvXsEhVSrXmODfAZ2O4TT0hZz10q6q88lVwsZRGt02U7M-5cr8wynwFjUxW8Av0mV7DAOvRz1G3ZuidT-ohyy84K3uEljDqSiDyDO2pPNFu3u9BUKkiPk2iYfh3Ey4wXhOuckeEplfvETh8MN63ATSA9SHA1hpb0jE_WhXW-wlTw3PEiXxI9s31NOwk3MIqqw=w192-rw',
+   'sizes': '192x192',
+   'type': 'image\/png',
+   'density': '4.0'
+  },
+  {
+   'src': 'https://blogger.googleusercontent.com/img/a/AVvXsEhVSrXmODfAZ2O4TT0hZz10q6q88lVwsZRGt02U7M-5cr8wynwFjUxW8Av0mV7DAOvRz1G3ZuidT-ohyy84K3uEljDqSiDyDO2pPNFu3u9BUKkiPk2iYfh3Ey4wXhOuckeEplfvETh8MN63ATSA9SHA1hpb0jE_WhXW-wlTw3PEiXxI9s31NOwk3MIqqw=w512-rw',
+   'sizes': '512x512',
+   'type': 'image\/png',
+   'density': '4.0'
+  }
+ ]
+}
