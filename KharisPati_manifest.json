@@ -1,6 +1,6 @@
 {
  'name': 'KharisPati',
- 'short_name': 'KPmoba',
+ 'short_name': 'KP_Games',
  'scope': 'https://www.kharispati.blogspot.com',
  'start_url': 'https://www.kharispati.blogspot.com',
  'display': 'standalone',
