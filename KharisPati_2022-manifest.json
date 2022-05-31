@@ -1,12 +1,12 @@
 {
  'name': 'KharisPati',
- 'short_name': 'KP_Games',
+ 'short_name': 'MobaInfo',
  'scope': 'https://www.kharispati.blogspot.com',
  'start_url': 'https://www.kharispati.blogspot.com',
  'display': 'standalone',
  'background_color': '#ffffff',
  'theme_color': '#ff0000',
- 'description': 'Wiki Moba Mobile Game',
+ 'description': 'Informasi Game Moba. Informasi tersebut berupa: Durability level, Offense level, Ability Effects level, Tingkat Kesulitan, Skill, Skin dan lain-lain. Informasi ini disediakan untuk para pemain dan penggemar game MOBA.',
  'icons': [
   {
    'src': 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPdWuxrhRUnUgE18T2idHnZ8deHFXRJZ_KSD55pIRkdPjwefBSx6TLOvIMXz-O0fR4CmWDs4D4IKqZOhDU34ZB4_liaLmqEOgQsB-sGm_qcGCg-2URjD9k8q9XjGxGpMFpZvmcTUIi0cIUcmkoCHkfPy8jJkw2EtAlVCNXfWRqmegnvjs9ZOe-UwDM5Q/w36/Favicon.png',
