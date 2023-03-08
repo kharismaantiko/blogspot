@@ -32,6 +32,9 @@ body{background-color:transparent;font-family:'Roboto',sans-serif;font-size:16px
 .flickity-prev-next-button.next{right:0;border-radius:10px 0 0 10px}
 .flickity-prev-next-button .flickity-button-icon{position:absolute;left:15%;top:15%;width:70%;height:70%}
 </style>
+</head>
+<body>
+<div class="load-related"></div>
 <script>
 function getQueryVariable(r){for(var t=window.location.search.substring(1).split("&"),e=0;e<t.length;e++){var i=t[e].split("=");if(i[0]==r)return i[1]}return!1}
 </script>
@@ -43,8 +46,5 @@ function shuffleArray(arr){var i=arr.length,j,temp;if(i===0)return false;while(-
 function filterdumplicate(entry){var new_entry=[]; $.each(entry, function(k1,v1){var same = false; $.each(new_entry, function(k2,v2) { if(v1.title.$t == v2.title.$t){same=true};}); if(same == false && v1.title.$t != ''){new_entry.push(v1);}}); return new_entry;} function related(a){$('.load-related').flickity('destroy');var e=shuffleArray(filterdumplicate(a));for (var i = 0; i < 15; i++) { for (var l=0;l<e[i].link.length;l++){if (e[i].link[l].rel=="alternate"){var link= e[i].link[l].href;break}}; var title=e[i].title.$t,date=e[i].published.$t.substring(0, 4),img=e[i].media$thumbnail.url.replace('s72-c','w100'); if(link !== getQueryVariable('this')){$('.load-related').append('<div class="carousel-cell"><a class="post-outer" href="' + link + '"><div class="first-thumb" style="background-image:url(' + img + ')"></div><div class="post-date">' + date + '</div><h5 class="notranslate post-title">' + title + '</h5></a></div>');}} $('.load-related').flickity({dragThreshold:10,pageDots:false,cellAlign:'left',arrowShape:'M 0,50 L 60,00 L 50,30 L 80,30 L 80,70 L 50,70 L 60,100 Z'})}
 var postid=getQueryVariable('id'); $.ajax({type:'GET',url:'https://www.blogger.com/feeds/8746835383313525398/posts/summary/'+postid,data:{'alt': 'json'},dataType:'jsonp',success:function(e) {var entry=e.entry,category=entry.category,var all_entry=[],var all_labels= []; for(var z=0;z<category.length;z++){all_labels.push(category[z].term);} for(f in all_labels){all_entry.push(fetchRelated(all_labels[f]))} $.when.apply(this, all_entry).done(function(){var fullEntry=[];for(var i=0;i < arguments.length;i++){entrys = arguments[i][0].feed.entry; fullEntry.push(entrys)};var merge_entry=[];for(var i=0;i < fullEntry.length;i++){$.merge(merge_entry,fullEntry[i])};related(merge_entry)});}});
 </script>
-</head>
-<body>
-<div class="load-related"></div>
 </body>
 </html>
