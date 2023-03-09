@@ -80,7 +80,7 @@ body{background-color:transparent;font-family:"Roboto",sans-serif;font-size:16px
 <script>
 function getQueryVariable(r){for(var t=window.location.search.substring(1).split("&"),e=0;e<t.length;e++){var i=t[e].split("=");if(i[0]==r)return i[1]}return!1}
 </script>
-<script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"/>
+<script crossorigin="anonymous" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flickity@3.0.0/dist/flickity.pkgd.min.js"></script>
 <script>
 function fetchRelated(label) {return $.ajax({type:'GET',url:'https://www.blogger.com/feeds/'+getQueryVariable('blogId')+'/posts/summary/-/'+encodeURIComponent(label)+'?alt=json&max-results=999999',cache:false,dataType:'json',success:function(resp){}});}
