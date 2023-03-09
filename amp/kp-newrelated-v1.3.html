@@ -100,10 +100,10 @@ function getQueryVariable(r){for(var t=window.location.search.substring(1).split
 </script>
 <script>
 function callback(a){
-var entry=a.entry,category=entry.category;for (var l=0;l<entry.link.length;l++){if (entry.link[l].rel=="alternate"){var link= entry.link[l].href;break}};for(var c=0;c<category.length;c++){var script=document.createElement('script');script.src='https://www.blogger.com/feeds/getQueryVariable('blogid')/posts/summary/-/'+encodeURIComponent(category[c].term)+'?alt=json-in-script&callback=related_results_labels&max-results=999999';var thisscript=document.getElementsByTagName('script')[0];thisscript.parentNode.insertBefore(script,thisscript);}
+var entry=a.entry,category=entry.category;for (var l=0;l<entry.link.length;l++){if (entry.link[l].rel=="alternate"){var link= entry.link[l].href;break}};for(var c=0;c<category.length;c++){var script=document.createElement('script');script.src='https://www.blogger.com/feeds/'+getQueryVariable('blogid')+'/posts/summary/-/'+encodeURIComponent(category[c].term)+'?alt=json-in-script&callback=related_results_labels&max-results=999999';var thisscript=document.getElementsByTagName('script')[0];thisscript.parentNode.insertBefore(script,thisscript);}
 removeRelatedDuplicates(); printRelatedLabels(link);
 }
-var script=document.createElement('script');script.src='https://www.blogger.com/feeds/getQueryVariable('blogid')/posts/summary/'+getQueryVariable('postid')+'?alt=json-in-script&callback=callback';var thisscript=document.getElementsByTagName('script')[0];thisscript.parentNode.insertBefore(script,thisscript);
+var script=document.createElement('script');script.src='https://www.blogger.com/feeds/'+getQueryVariable('blogid')+'/posts/summary/'+getQueryVariable('postid')+'?alt=json-in-script&callback=callback';var thisscript=document.getElementsByTagName('script')[0];thisscript.parentNode.insertBefore(script,thisscript);
 </script>
 <script src="https://cdn.jsdelivr.net/npm/flickity@3.0.0/dist/flickity.pkgd.min.js"></script>
 <script>
