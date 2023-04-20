@@ -9,7 +9,7 @@ function spells(spells){
 $.each(spells, function(k,v){$('#spells').append('<tr><td class="title"><div class="spells-icon" style="background-image:url('+v.icon+')"></div></td><td class="info"><div class="spells-name">'+v.name+'</div>'+v.description+'</td></tr>');});
 }
 function aov(h,c,k,p){
-$.ajax({type: 'GET',url: 'http://'+h+c+'/json/k+'_'+p,cache:false,dataType:'text',success:function(resp){let parse=JSON.parse(resp),data=parse.data;
+$.ajax({type: 'GET',url: 'http://'+h+c+'/json/'+k+'_'+p,cache:false,dataType:'text',success:function(resp){let parse=JSON.parse(resp),data=parse.data;
 $('#full_data_Character').html('<div class="image-container"><div class="image-cover" style="background-image:url('+data.character_image+')" title="'+data.character_name+'"></div></div><table class="table_info"><tr><th>Stats</th></tr><tr><td class="title">Type</td><td class="wspace">:</td><td class="info">'+data.character_type+'</td></tr>
 '+stats(data.character_stats)+'</table><table class="table_info"><tr><th>Story</th></tr><tr><td class="fullwidth"><div class="read-more-less">'+data.character_story+'</div></td></tr></table><table class="table_info"><tr><th>Skins</th></tr><tr><td class="fullwidth"><div class="slide-skins"></div></td></tr></table><table id="skills" class="table_info">
 <tr><th>Skills</th></tr></table><table id="spells" class="table_info"><tr><th>Items</th></tr></table>');
