@@ -1,3 +1,0 @@
-!function(t){t.fn.ProgressBar=function(){return t(this).each(function(){var o=t(this).children(),n=t(this).offset().top,r=t(window).height(),i=o.attr("data-percent")+"%",a=o.attr("data-color");r>n&&(o.css({backgroundColor:a}),o.animate({width:i},1e3)),t(window).scroll(function(){t(this).scrollTop()>n-r&&(o.css({backgroundColor:a}),o.animate({width:i},1e3))})}),this}}(jQuery);
-!function(x){x.fn.ProgressBarNoAnim=function(){return x(this).each(function(){var o=x(this).children(),n=x(this).offset().top,r=x(window).height(),i=o.attr("data-percent")+"%",
-a=o.attr("data-color");o.css('background-color',a).css('width',i)}}(jQuery);
